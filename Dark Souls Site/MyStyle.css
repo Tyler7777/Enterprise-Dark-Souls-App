@@ -1,0 +1,10 @@
+﻿html 
+{
+background-image: url('images/dks3background.jpg');
+background-size: cover;
+    height:100%;
+}
+p {
+color: white;
+}
+
