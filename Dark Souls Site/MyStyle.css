@@ -3,8 +3,29 @@
 background-image: url('images/dks3background.jpg');
 background-size: cover;
     height:100%;
+    color: white;
 }
-p {
+h6 {
 color: white;
+text-align: center;
+font-size: 300%;
 }
 
+table
+{
+    width:100%;   
+    border: 10px solid transparent;
+    /* border-image: url('images/dks3background.jpg') 30 round; */
+}
+th
+{
+font-size: 200%;
+background-color: black;
+}
+td
+{
+    border: 5% gray;
+    font-size: 150%;
+    background-color: black;
+    padding: 1%;
+}
