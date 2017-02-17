@@ -34,7 +34,9 @@
                 </asp:DropDownList>
                 <br /><br />
                 <!-- Character Class -->Class: 
-                <asp:DropDownList ID="Class" runat="server"></asp:DropDownList>
+                <asp:DropDownList ID="Class" runat="server" DataSourceID="SqlDataSource1" DataTextField="Class_Name" DataValueField="Class_Name"></asp:DropDownList>
+
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Dark_SoulsConnectionString %>" SelectCommand="SELECT [Class_Name] FROM [Class] ORDER BY [Class_Name]"></asp:SqlDataSource>
 
                 <br /><br />
                 <!-- Character Covenant -->Covenant:
@@ -49,19 +51,31 @@
 
             <td>
                 <!-- second cell, here gear selection will be contained -->
-                Head:       <asp:DropDownList ID="Head" runat="server"></asp:DropDownList><br /><br />
-                Chest:      <asp:DropDownList ID="Chest" runat="server"></asp:DropDownList><br /><br />
-                Hands:      <asp:DropDownList ID="Hands" runat="server"></asp:DropDownList><br /><br />
-                Legs:       <asp:DropDownList ID="Legs" runat="server"></asp:DropDownList><br /><br />
+                Head:       <asp:DropDownList ID="Head" runat="server" DataSourceID="SqlDataSource2" DataTextField="Name" DataValueField="Name"></asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Dark_SoulsConnectionString2 %>" SelectCommand="SELECT [Name] FROM [Head] ORDER BY [Name]"></asp:SqlDataSource>
+                <br /><br />
+                Chest:      <asp:DropDownList ID="Chest" runat="server" DataSourceID="SqlDataSource3" DataTextField="Name" DataValueField="Name"></asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:Dark_SoulsConnectionString3 %>" SelectCommand="SELECT [Name] FROM [Chest] ORDER BY [Name]"></asp:SqlDataSource>
+                <br /><br />
+                Hands:      <asp:DropDownList ID="Hands" runat="server" DataSourceID="SqlDataSource4" DataTextField="Name" DataValueField="Name"></asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:Dark_SoulsConnectionString4 %>" SelectCommand="SELECT [Name] FROM [Chest] ORDER BY [Name]"></asp:SqlDataSource>
+                <br /><br />
+                Legs:       <asp:DropDownList ID="Legs" runat="server" DataSourceID="SqlDataSource5" DataTextField="Name" DataValueField="Name"></asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:Dark_SoulsConnectionString5 %>" SelectCommand="SELECT [Name] FROM [Chest] ORDER BY [Name]"></asp:SqlDataSource>
+                <br /><br />
                 <hr />
-                Ring 1:     <asp:DropDownList ID="Ring1" runat="server"></asp:DropDownList><br /><br />
-                Ring 2:     <asp:DropDownList ID="Ring2" runat="server"></asp:DropDownList><br /><br />
-                Ring 3:     <asp:DropDownList ID="Ring3" runat="server"></asp:DropDownList><br /><br />
-                Ring 4:     <asp:DropDownList ID="Ring4" runat="server"></asp:DropDownList><br /><br />
+                Ring 1:     <asp:DropDownList ID="Ring1" runat="server" DataSourceID="SqlDataSource6" DataTextField="Name" DataValueField="Name"></asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:Dark_SoulsConnectionString6 %>" SelectCommand="SELECT [Name] FROM [Rings] ORDER BY [Name]"></asp:SqlDataSource>
+                <br /><br />
+                Ring 2:     <asp:DropDownList ID="Ring2" runat="server" DataSourceID="SqlDataSource6" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br />
+                Ring 3:     <asp:DropDownList ID="Ring3" runat="server" DataSourceID="SqlDataSource6" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br />
+                Ring 4:     <asp:DropDownList ID="Ring4" runat="server" DataSourceID="SqlDataSource6" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br />
                 <br /><hr /><br />
                 <table>
                     <tr>
-                <td>LH1: <asp:DropDownList ID="LH1" runat="server"></asp:DropDownList><br /><br /></td>
+                <td>LH1: <asp:DropDownList ID="LH1" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList>
+                    <asp:SqlDataSource ID="SqlDataSource7" runat="server" ConnectionString="<%$ ConnectionStrings:Dark_SoulsConnectionString7 %>" SelectCommand="SELECT [Name] FROM [Weapons] ORDER BY [Name]"></asp:SqlDataSource>
+                    <br /><br /></td>
                 <td>LH2: <asp:DropDownList ID="LH2" runat="server"></asp:DropDownList><br /><br /></td>
                <td> LH3: <asp:DropDownList ID="LH3" runat="server"></asp:DropDownList><br /><br /></td>
                         </tr>
