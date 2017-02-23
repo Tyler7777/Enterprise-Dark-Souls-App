@@ -40,7 +40,16 @@
 
                 <br /><br />
                 <!-- Character Covenant -->Covenant:
-                <asp:DropDownList ID="Covenant" runat="server"></asp:DropDownList>
+                <asp:DropDownList ID="Covenant" runat="server">
+                <asp:ListItem Selected="True">Warriors of Sunlight</asp:ListItem>
+                <asp:ListItem>Way of Blue</asp:ListItem>
+                <asp:ListItem>Blue Sentinels</asp:ListItem>
+                <asp:ListItem>Blades of the Darkmoon</asp:ListItem>
+                <asp:ListItem>Rosaria&#39;s Fingers</asp:ListItem>
+                <asp:ListItem>Mound-Makers</asp:ListItem>
+                <asp:ListItem>Watchdogs of Farron</asp:ListItem>
+                <asp:ListItem>Aldrich Faithful</asp:ListItem>
+                </asp:DropDownList>
 
                 <br /><br /><br /><br />
                 <hr />
@@ -76,13 +85,13 @@
                 <td>LH1: <asp:DropDownList ID="LH1" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList>
                     <asp:SqlDataSource ID="SqlDataSource7" runat="server" ConnectionString="<%$ ConnectionStrings:Dark_SoulsConnectionString7 %>" SelectCommand="SELECT [Name] FROM [Weapons] ORDER BY [Name]"></asp:SqlDataSource>
                     <br /><br /></td>
-                <td>LH2: <asp:DropDownList ID="LH2" runat="server"></asp:DropDownList><br /><br /></td>
-               <td> LH3: <asp:DropDownList ID="LH3" runat="server"></asp:DropDownList><br /><br /></td>
+                <td>LH2: <asp:DropDownList ID="LH2" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br /></td>
+               <td> LH3: <asp:DropDownList ID="LH3" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br /></td>
                         </tr>
                 <tr>
-                <td>RH1: <asp:DropDownList ID="RH1" runat="server"></asp:DropDownList><br /><br /></td>
-               <td> RH2: <asp:DropDownList ID="RH2" runat="server"></asp:DropDownList><br /><br /></td>
-                <td>RH3: <asp:DropDownList ID="RH3" runat="server"></asp:DropDownList><br /><br /></td>
+                <td>RH1: <asp:DropDownList ID="RH1" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br /></td>
+               <td> RH2: <asp:DropDownList ID="RH2" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br /></td>
+                <td>RH3: <asp:DropDownList ID="RH3" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br /></td>
                     </tr>
                 </table>
             </td>
@@ -91,7 +100,7 @@
             <td>
                 <!-- third cell, has all stats-->
                 Defenses:<br /><br /><br />
-                Physical: <asp:Literal ID="PhysicalDef" runat="server" Text="0"></asp:Literal>
+                Physical: <asp:Literal ID="PhysicalDef" runat="server" Text="0" ></asp:Literal>
                 <br /><br />
                 VS Strike <asp:Literal ID="StrikeDef" runat="server" Text="0"></asp:Literal>
                 <br /><br />
