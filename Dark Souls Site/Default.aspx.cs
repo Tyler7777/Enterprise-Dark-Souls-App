@@ -89,237 +89,220 @@ public partial class _Default : System.Web.UI.Page
 
                 SqlCommand testcommand = new SqlCommand("Select Physical from Chest where Name = '" + Chest.SelectedValue + "';", dbConnection);
                 Chestphys = (int)testcommand.ExecuteScalar();
-                //PhysicalDef.Text = testcommand.ExecuteScalar().ToString();
 
                 SqlCommand test2command = new SqlCommand("Select Strike from Chest where Name = '" + Chest.SelectedValue + "';", dbConnection);
                 Cheststrike = (int)test2command.ExecuteScalar();
-                //StrikeDef.Text = test2command.ExecuteScalar().ToString();
 
                 SqlCommand test3command = new SqlCommand("Select Slash from Chest where Name = '" + Chest.SelectedValue + "';", dbConnection);
                 ChestSlash = (int)test3command.ExecuteScalar();
-                //SlashDef.Text = test3command.ExecuteScalar().ToString();
 
                 SqlCommand test4command = new SqlCommand("Select Thrust from Chest where Name = '" + Chest.SelectedValue + "';", dbConnection);
                 ChestThrust = (int)test4command.ExecuteScalar();
-                //ThrustDef.Text = test4command.ExecuteScalar().ToString();
 
                 SqlCommand test5command = new SqlCommand("Select Magic from Chest where Name = '" + Chest.SelectedValue + "';", dbConnection);
                 ChestMagic = (int)test5command.ExecuteScalar();
-                //MagicDef.Text = test5command.ExecuteScalar().ToString();
 
                 SqlCommand test6command = new SqlCommand("Select Fire from Chest where Name = '" + Chest.SelectedValue + "';", dbConnection);
                 ChestFire = (int)test6command.ExecuteScalar();
-                //FireDef.Text = test6command.ExecuteScalar().ToString();
 
                 SqlCommand test7command = new SqlCommand("Select Lightning from Chest where Name = '" + Chest.SelectedValue + "';", dbConnection);
                 ChestLightning = (int)test7command.ExecuteScalar();
-                //LightningDef.Text = test7command.ExecuteScalar().ToString();
 
                 SqlCommand test8command = new SqlCommand("Select Dark from Chest where Name = '" + Chest.SelectedValue + "';", dbConnection);
                 ChestDark = (int)test8command.ExecuteScalar();
-                //DarkDef.Text = test8command.ExecuteScalar().ToString();
 
                 SqlCommand test9command = new SqlCommand("Select Bleed from Chest where Name = '" + Chest.SelectedValue + "';", dbConnection);
                 ChestBleed = (int)test9command.ExecuteScalar();
-                //BleedRes.Text = test9command.ExecuteScalar().ToString();
 
                 SqlCommand test10command = new SqlCommand("Select Posion from Chest where Name = '" + Chest.SelectedValue + "';", dbConnection);
                 ChestPosion = (int)test10command.ExecuteScalar();
-                //PoisonRes.Text = test10command.ExecuteScalar().ToString();
 
                 SqlCommand test11command = new SqlCommand("Select Frost from Chest where Name = '" + Chest.SelectedValue + "';", dbConnection);
                 ChestFrost = (int)test11command.ExecuteScalar();
-                //FrostRes.Text = test11command.ExecuteScalar().ToString();
 
                 SqlCommand test12command = new SqlCommand("Select Curse from Chest where Name = '" + Chest.SelectedValue + "';", dbConnection);
                 ChestCurse = (int)test12command.ExecuteScalar();
-                //CurseRes.Text = test12command.ExecuteScalar().ToString();
 
                 SqlCommand test13command = new SqlCommand("Select Poise from Chest where Name = '" + Chest.SelectedValue + "';", dbConnection);
                 ChestPoise = (int)test13command.ExecuteScalar();
-                //.Text = testcommand.ExecuteScalar().ToString();
 
                 SqlCommand test14command = new SqlCommand("Select Carry_Weight from Chest where Name = '" + Chest.SelectedValue + "';", dbConnection);
                 ChestWeight = (int)test14command.ExecuteScalar();
-                //.Text = testcommand.ExecuteScalar().ToString();
 
                 //--------------------------------------------------------------Head-----------------------------------------------------------------------------------
 
                 SqlCommand Headcommand = new SqlCommand("Select Physical from Head where Name = '" + Head.SelectedValue + "';", dbConnection);
                 Headphys = (int)Headcommand.ExecuteScalar();
-                //PhysicalDef.Text = testcommand.ExecuteScalar().ToString();
 
                 SqlCommand Head2command = new SqlCommand("Select Strike from Head where Name = '" + Head.SelectedValue + "';", dbConnection);
                 Headstrike = (int)Head2command.ExecuteScalar();
-                //StrikeDef.Text = test2command.ExecuteScalar().ToString();
 
                 SqlCommand Head3command = new SqlCommand("Select Slash from Head where Name = '" + Head.SelectedValue + "';", dbConnection);
                 HeadSlash = (int)Head3command.ExecuteScalar();
-                //SlashDef.Text = test3command.ExecuteScalar().ToString();
 
                 SqlCommand Head4command = new SqlCommand("Select Thrust from Head where Name = '" + Head.SelectedValue + "';", dbConnection);
                 HeadThrust = (int)Head4command.ExecuteScalar();
-                //ThrustDef.Text = test4command.ExecuteScalar().ToString();
 
                 SqlCommand Head5command = new SqlCommand("Select Magic from Head where Name = '" + Head.SelectedValue + "';", dbConnection);
                 HeadMagic = (int)Head5command.ExecuteScalar();
-                //MagicDef.Text = test5command.ExecuteScalar().ToString();
 
                 SqlCommand Head6command = new SqlCommand("Select Fire from Head where Name = '" + Head.SelectedValue + "';", dbConnection);
                 HeadFire = (int)Head6command.ExecuteScalar();
-                //FireDef.Text = test6command.ExecuteScalar().ToString();
 
                 SqlCommand Head7command = new SqlCommand("Select Lightning from Head where Name = '" + Head.SelectedValue + "';", dbConnection);
                 HeadLightning = (int)Head7command.ExecuteScalar();
-                //LightningDef.Text = test7command.ExecuteScalar().ToString();
 
                 SqlCommand Head8command = new SqlCommand("Select Dark from Head where Name = '" + Head.SelectedValue + "';", dbConnection);
                 HeadDark = (int)Head8command.ExecuteScalar();
-                //DarkDef.Text = test8command.ExecuteScalar().ToString();
 
                 SqlCommand Head9command = new SqlCommand("Select Bleed from Head where Name = '" + Head.SelectedValue + "';", dbConnection);
                 HeadBleed = (int)Head9command.ExecuteScalar();
-                //BleedRes.Text = test9command.ExecuteScalar().ToString();
 
                 SqlCommand Head10command = new SqlCommand("Select Posion from Head where Name = '" + Head.SelectedValue + "';", dbConnection);
                 HeadPosion = (int)Head10command.ExecuteScalar();
-                //PoisonRes.Text = test10command.ExecuteScalar().ToString();
 
                 SqlCommand Head11command = new SqlCommand("Select Frost from Head where Name = '" + Head.SelectedValue + "';", dbConnection);
                 HeadFrost = (int)Head11command.ExecuteScalar();
-                //FrostRes.Text = test11command.ExecuteScalar().ToString();
 
                 SqlCommand Head12command = new SqlCommand("Select Curse from Head where Name = '" + Head.SelectedValue + "';", dbConnection);
                 HeadCurse = (int)Head12command.ExecuteScalar();
-                //CurseRes.Text = test12command.ExecuteScalar().ToString();
 
                 SqlCommand Head13command = new SqlCommand("Select Poise from Head where Name = '" + Head.SelectedValue + "';", dbConnection);
                 HeadPoise = (int)Head13command.ExecuteScalar();
-                //.Text = testcommand.ExecuteScalar().ToString();
 
                 SqlCommand Head14command = new SqlCommand("Select Carry_Weight from Head where Name = '" + Head.SelectedValue + "';", dbConnection);
                 HeadWeight = (int)Head14command.ExecuteScalar();
-                //.Text = testcommand.ExecuteScalar().ToString();
 
                 //----------------------------------------------------------------Hands---------------------------------------------------------------------------------
 
 
                 SqlCommand Handscommand = new SqlCommand("Select Physical from Hands where Name = '" + Hands.SelectedValue + "';", dbConnection);
                 Handsphys = (int)Handscommand.ExecuteScalar();
-                //PhysicalDef.Text = testcommand.ExecuteScalar().ToString();
 
                 SqlCommand Hands2command = new SqlCommand("Select Strike from Hands where Name = '" + Hands.SelectedValue + "';", dbConnection);
                 Handsstrike = (int)Hands2command.ExecuteScalar();
-                //StrikeDef.Text = test2command.ExecuteScalar().ToString();
 
                 SqlCommand Hands3command = new SqlCommand("Select Slash from Hands where Name = '" + Hands.SelectedValue + "';", dbConnection);
                 HandsSlash = (int)Hands3command.ExecuteScalar();
-                //SlashDef.Text = test3command.ExecuteScalar().ToString();
 
                 SqlCommand Hands4command = new SqlCommand("Select Thrust from Hands where Name = '" + Hands.SelectedValue + "';", dbConnection);
                 HandsThrust = (int)Hands4command.ExecuteScalar();
-                //ThrustDef.Text = test4command.ExecuteScalar().ToString();
 
                 SqlCommand Hands5command = new SqlCommand("Select Magic from Hands where Name = '" + Hands.SelectedValue + "';", dbConnection);
                 HandsMagic = (int)Hands5command.ExecuteScalar();
-                //MagicDef.Text = test5command.ExecuteScalar().ToString();
 
                 SqlCommand Hands6command = new SqlCommand("Select Fire from Hands where Name = '" + Hands.SelectedValue + "';", dbConnection);
                 HandsFire = (int)Hands6command.ExecuteScalar();
-                //FireDef.Text = test6command.ExecuteScalar().ToString();
 
                 SqlCommand Hands7command = new SqlCommand("Select Lightning from Hands where Name = '" + Hands.SelectedValue + "';", dbConnection);
                 HandsLightning = (int)Hands7command.ExecuteScalar();
-                //LightningDef.Text = test7command.ExecuteScalar().ToString();
 
                 SqlCommand Hands8command = new SqlCommand("Select Dark from Hands where Name = '" + Hands.SelectedValue + "';", dbConnection);
                 HandsDark = (int)Hands8command.ExecuteScalar();
-                //DarkDef.Text = test8command.ExecuteScalar().ToString();
 
                 SqlCommand Hands9command = new SqlCommand("Select Bleed from Hands where Name = '" + Hands.SelectedValue + "';", dbConnection);
                 HandsBleed = (int)Hands9command.ExecuteScalar();
-                //BleedRes.Text = test9command.ExecuteScalar().ToString();
 
                 SqlCommand Hands10command = new SqlCommand("Select Posion from Hands where Name = '" + Hands.SelectedValue + "';", dbConnection);
                 HandsPosion = (int)Hands10command.ExecuteScalar();
-                //PoisonRes.Text = test10command.ExecuteScalar().ToString();
 
                 SqlCommand Hands11command = new SqlCommand("Select Frost from Hands where Name = '" + Hands.SelectedValue + "';", dbConnection);
                 HandsFrost = (int)Hands11command.ExecuteScalar();
-                //FrostRes.Text = test11command.ExecuteScalar().ToString();
 
                 SqlCommand Hands12command = new SqlCommand("Select Curse from Hands where Name = '" + Hands.SelectedValue + "';", dbConnection);
                 HandsCurse = (int)Hands12command.ExecuteScalar();
-                //CurseRes.Text = test12command.ExecuteScalar().ToString();
 
                 SqlCommand Hands13command = new SqlCommand("Select Poise from Hands where Name = '" + Hands.SelectedValue + "';", dbConnection);
                 HandsPoise = (int)Hands13command.ExecuteScalar();
-                //.Text = testcommand.ExecuteScalar().ToString();
 
                 SqlCommand Hands14command = new SqlCommand("Select Carry_Weight from Hands where Name = '" + Hands.SelectedValue + "';", dbConnection);
                 HandsWeight = (int)Hands14command.ExecuteScalar();
-                //.Text = testcommand.ExecuteScalar().ToString();
 
                 //----------------------------------------------------------------Legs---------------------------------------------------------------------------------
 
                 SqlCommand Legscommand = new SqlCommand("Select Physical from Legs where Name = '" + Legs.SelectedValue + "';", dbConnection);
                 Legsphys = (int)Legscommand.ExecuteScalar();
-                //PhysicalDef.Text = testcommand.ExecuteScalar().ToString();
 
                 SqlCommand Legs2command = new SqlCommand("Select Strike from Legs where Name = '" + Legs.SelectedValue + "';", dbConnection);
                 Legsstrike = (int)Legs2command.ExecuteScalar();
-                //StrikeDef.Text = test2command.ExecuteScalar().ToString();
 
                 SqlCommand Legs3command = new SqlCommand("Select Slash from Legs where Name = '" + Legs.SelectedValue + "';", dbConnection);
                 LegsSlash = (int)Legs3command.ExecuteScalar();
-                //SlashDef.Text = test3command.ExecuteScalar().ToString();
 
                 SqlCommand Legs4command = new SqlCommand("Select Thrust from Legs where Name = '" + Legs.SelectedValue + "';", dbConnection);
                 LegsThrust = (int)Legs4command.ExecuteScalar();
-                //ThrustDef.Text = test4command.ExecuteScalar().ToString();
 
                 SqlCommand Legs5command = new SqlCommand("Select Magic from Legs where Name = '" + Legs.SelectedValue + "';", dbConnection);
                 LegsMagic = (int)Legs5command.ExecuteScalar();
-                //MagicDef.Text = test5command.ExecuteScalar().ToString();
 
                 SqlCommand Legs6command = new SqlCommand("Select Fire from Legs where Name = '" + Legs.SelectedValue + "';", dbConnection);
                 LegsFire = (int)Legs6command.ExecuteScalar();
-                //FireDef.Text = test6command.ExecuteScalar().ToString();
 
                 SqlCommand Legs7command = new SqlCommand("Select Lightning from Legs where Name = '" + Legs.SelectedValue + "';", dbConnection);
                 LegsLightning = (int)Legs7command.ExecuteScalar();
-                //LightningDef.Text = test7command.ExecuteScalar().ToString();
 
                 SqlCommand Legs8command = new SqlCommand("Select Dark from Legs where Name = '" + Legs.SelectedValue + "';", dbConnection);
                 LegsDark = (int)Legs8command.ExecuteScalar();
-                //DarkDef.Text = test8command.ExecuteScalar().ToString();
 
                 SqlCommand Legs9command = new SqlCommand("Select Bleed from Legs where Name = '" + Legs.SelectedValue + "';", dbConnection);
                 LegsBleed = (int)Legs9command.ExecuteScalar();
-                //BleedRes.Text = test9command.ExecuteScalar().ToString();
 
                 SqlCommand Legs10command = new SqlCommand("Select Posion from Legs where Name = '" + Legs.SelectedValue + "';", dbConnection);
                 LegsPosion = (int)Legs10command.ExecuteScalar();
-                //PoisonRes.Text = test10command.ExecuteScalar().ToString();
 
                 SqlCommand Legs11command = new SqlCommand("Select Frost from Legs where Name = '" + Legs.SelectedValue + "';", dbConnection);
                 LegsFrost = (int)Legs11command.ExecuteScalar();
-                //FrostRes.Text = test11command.ExecuteScalar().ToString();
 
                 SqlCommand Legs12command = new SqlCommand("Select Curse from Legs where Name = '" + Legs.SelectedValue + "';", dbConnection);
                 LegsCurse = (int)Legs12command.ExecuteScalar();
-                //CurseRes.Text = test12command.ExecuteScalar().ToString();
 
                 SqlCommand Legs13command = new SqlCommand("Select Poise from Legs where Name = '" + Legs.SelectedValue + "';", dbConnection);
                 LegsPoise = (int)Legs13command.ExecuteScalar();
-                //.Text = testcommand.ExecuteScalar().ToString();
 
                 SqlCommand Legs14command = new SqlCommand("Select Carry_Weight from Legs where Name = '" + Legs.SelectedValue + "';", dbConnection);
                 LegsWeight = (int)Legs14command.ExecuteScalar();
-                //.Text = testcommand.ExecuteScalar().ToString();
 
                 int TotalPhys = Chestphys + Headphys + Handsphys + Legsphys;
+                int TotalStrike = ChestSlash + Headstrike + Handsstrike + Legsstrike;
+                int TotalSlash = ChestSlash + HeadSlash + HandsSlash + LegsSlash;
+                int TotalThrust = ChestThrust + HeadThrust + HandsThrust + LegsThrust;
+                int TotalMagic = ChestMagic + HeadMagic + HandsMagic + LegsMagic;
+                int TotalFire = ChestFire + HeadFire + HandsFire + LegsFire;
+                int TotalLightning = ChestLightning + HeadLightning + HandsLightning + LegsLightning;
+                int TotalDark = ChestDark + HeadDark + HandsDark + LegsDark;
+                int TotalBleed = ChestBleed + HeadBleed + HandsBleed + LegsBleed;
+                int TotalPosion = ChestPosion + HeadPosion + HandsPosion + LegsPosion;
+                int TotalFrost = ChestFrost + HeadFrost + HandsFrost + LegsFrost;
+                int TotalCurse = ChestCurse + HeadCurse + HandsCurse + LegsCurse;
+                int TotalPoise = ChestPoise + HeadPoise + HandsPoise + LegsPoise;
+                int TotalWeight = ChestWeight + HeadPoise + HandsPoise + LegsPoise;
+
                 PhysicalDef.Text = TotalPhys.ToString();
+                StrikeDef.Text = TotalStrike.ToString();
+                SlashDef.Text = TotalSlash.ToString();
+                ThrustDef.Text = TotalThrust.ToString();
+                MagicDef.Text = TotalMagic.ToString();
+                FireDef.Text = TotalFire.ToString();
+                LightningDef.Text = TotalLightning.ToString();
+                DarkDef.Text = TotalDark.ToString();
+                BleedRes.Text = TotalBleed.ToString();
+                PoisonRes.Text = TotalPosion.ToString();
+                FrostRes.Text = TotalFrost.ToString();
+                CurseRes.Text = TotalCurse.ToString();
+                Poise.Text = TotalPoise.ToString();
+                CWeight.Text = TotalWeight.ToString();
+
+                //----------------------------------------------------------------Rings---------------------------------------------------------------------------------
+
+                Notes.Text = "";
+                SqlCommand RingE1 = new SqlCommand("Select Effects from Rings where Name = '" + Ring1.SelectedValue + "';", dbConnection);
+                Notes.Text += Ring1.SelectedValue+": "+ RingE1.ExecuteScalar().ToString() + Environment.NewLine + Environment.NewLine;
+                SqlCommand RingE2 = new SqlCommand("Select Effects from Rings where Name = '" + Ring2.SelectedValue + "';", dbConnection);
+                Notes.Text += Ring2.SelectedValue + ": " + RingE2.ExecuteScalar().ToString() + Environment.NewLine + Environment.NewLine;
+                SqlCommand RingE3 = new SqlCommand("Select Effects from Rings where Name = '" + Ring3.SelectedValue + "';", dbConnection);
+                Notes.Text += Ring3.SelectedValue + ": " + RingE3.ExecuteScalar().ToString() + Environment.NewLine + Environment.NewLine;
+                SqlCommand RingE4 = new SqlCommand("Select Effects from Rings where Name = '" + Ring4.SelectedValue + "';", dbConnection);
+                Notes.Text += Ring4.SelectedValue + ": " + RingE4.ExecuteScalar().ToString() + Environment.NewLine + Environment.NewLine;
             }
 
         }

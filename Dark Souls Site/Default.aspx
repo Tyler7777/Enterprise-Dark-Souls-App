@@ -54,7 +54,10 @@
                 <br /><br /><br /><br />
                 <hr />
                 Additional Notes/Requirements:
-                <asp:TextBox ID="Notes" runat="server" Width="70%" ReadOnly="true" Rows="5" Height="100px"></asp:TextBox>
+                <asp:TextBox ID="Notes" runat="server" Width="100%" ReadOnly="true" Rows="5" Height="172px" TextMode="MultiLine"></asp:TextBox>
+                <br /><br /><br /><br /><br /><br /><br /><br />
+                <center><asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Calculate Stats" Height="52px" Width="201px" Font-Size="X-Large" /></center>
+
             </td> 
 
 
@@ -75,8 +78,6 @@
                 <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:Dark_SoulsConnectionString5 %>" SelectCommand="SELECT [Name] FROM [Chest] ORDER BY [Name]"></asp:SqlDataSource>
                 <br />
 
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
-
                 <br />
                 <hr />
                 Ring 1:     <asp:DropDownList ID="Ring1" runat="server" DataSourceID="SqlDataSource6" DataTextField="Name" DataValueField="Name"></asp:DropDownList>
@@ -88,16 +89,24 @@
                 <br /><hr /><br />
                 <table>
                     <tr>
-                <td>LH1: <asp:DropDownList ID="LH1" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList>
+                <td>LH1: 
+                    <br />
+                    <asp:DropDownList ID="LH1" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList>
                     <asp:SqlDataSource ID="SqlDataSource7" runat="server" ConnectionString="<%$ ConnectionStrings:Dark_SoulsConnectionString7 %>" SelectCommand="SELECT [Name] FROM [Weapons] ORDER BY [Name]"></asp:SqlDataSource>
                     <br /><br /></td>
-                <td>LH2: <asp:DropDownList ID="LH2" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br /></td>
-               <td> LH3: <asp:DropDownList ID="LH3" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br /></td>
+                <td>LH2:<br />
+&nbsp;<asp:DropDownList ID="LH2" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br /></td>
+               <td> LH3:<br />
+&nbsp;<asp:DropDownList ID="LH3" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br /></td>
                         </tr>
                 <tr>
-                <td>RH1: <asp:DropDownList ID="RH1" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br /></td>
-               <td> RH2: <asp:DropDownList ID="RH2" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br /></td>
-                <td>RH3: <asp:DropDownList ID="RH3" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br /></td>
+                <td>RH1: 
+                    <br />
+                    <asp:DropDownList ID="RH1" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br /></td>
+               <td> RH2:<br />
+&nbsp;<asp:DropDownList ID="RH2" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br /></td>
+                <td>RH3:<br />
+&nbsp;<asp:DropDownList ID="RH3" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br /></td>
                     </tr>
                 </table>
             </td>
@@ -108,7 +117,7 @@
                 Defenses:<br /><br /><br />
                 Physical: <asp:Literal ID="PhysicalDef" runat="server" Text="0" ></asp:Literal>
                 <br /><br />
-                VS Strike <asp:Literal ID="StrikeDef" runat="server" Text="0"></asp:Literal>
+                VS Strike: <asp:Literal ID="StrikeDef" runat="server" Text="0"></asp:Literal>
                 <br /><br />
                 VS Slash: <asp:Literal ID="SlashDef" runat="server" Text="0"></asp:Literal>
                 <br /><br />
@@ -133,6 +142,11 @@
                 <br /><br />
                 Curse: <asp:Literal ID="CurseRes" runat="server" Text="0"></asp:Literal>
                 <br /><br />
+
+                <hr />
+                Poise: <asp:Literal ID="Poise" runat="server" Text="0"></asp:Literal>
+                <br /><br />
+                Carry Weight: <asp:Literal ID="CWeight" runat="server" Text="0"></asp:Literal>
             </td>
         </tr>
 
