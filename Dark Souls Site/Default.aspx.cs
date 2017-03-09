@@ -303,6 +303,13 @@ public partial class _Default : System.Web.UI.Page
                 Notes.Text += Ring3.SelectedValue + ": " + RingE3.ExecuteScalar().ToString() + Environment.NewLine + Environment.NewLine;
                 SqlCommand RingE4 = new SqlCommand("Select Effects from Rings where Name = '" + Ring4.SelectedValue + "';", dbConnection);
                 Notes.Text += Ring4.SelectedValue + ": " + RingE4.ExecuteScalar().ToString() + Environment.NewLine + Environment.NewLine;
+
+                //----------------------------------------------------------------Character---------------------------------------------------------------------------------
+
+                SqlCommand LevelConnect = new SqlCommand("Select Soul_Level from Class where Class_Name = '" + Class.SelectedValue + "';", dbConnection);
+                Level.Text = LevelConnect.ExecuteScalar().ToString();
+                SqlCommand VigorConnect = new SqlCommand("Select Vigor from Class where Class_Name = '" + Class.SelectedValue + "';", dbConnection);
+                Vigor.Text = VigorConnect.ExecuteScalar().ToString();
             }
 
         }

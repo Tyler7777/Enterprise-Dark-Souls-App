@@ -50,6 +50,29 @@
                 <asp:ListItem>Watchdogs of Farron</asp:ListItem>
                 <asp:ListItem>Aldrich Faithful</asp:ListItem>
                 </asp:DropDownList>
+                <hr />
+                <br /><br /><br /><br />
+                Level: <asp:Literal ID="Level" runat="server" Text="0" ></asp:Literal>
+                <br /><br />
+                Vigor: <asp:Literal ID="Vigor" runat="server" Text="0"></asp:Literal>
+                <br /><br />
+                Attunement: <asp:Literal ID="Attunement" runat="server" Text="0"></asp:Literal>
+                <br /><br />
+                Endurance: <asp:Literal ID="Endurance" runat="server" Text="0"></asp:Literal>
+                <br /><br />
+                Vitality: <asp:Literal ID="Vitality" runat="server" Text="0"></asp:Literal>
+                <br /><br />
+                Strength: <asp:Literal ID="Strength" runat="server" Text="0"></asp:Literal>
+                <br /><br />
+                Dexterity: <asp:Literal ID="Dexterity" runat="server" Text="0"></asp:Literal>
+                <br /><br />
+                Intelligence: <asp:Literal ID="Intelligence" runat="server" Text="0"></asp:Literal>
+                <br /><br />
+                Faith: <asp:Literal ID="Faith" runat="server" Text="0"></asp:Literal>
+                <br /><br />
+                Luck: <asp:Literal ID="Luck" runat="server" Text="0"></asp:Literal>
+                <br /><br />
+
 
                 <br /><br /><br /><br />
                 <hr />
