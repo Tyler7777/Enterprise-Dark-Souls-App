@@ -8,6 +8,18 @@ using System.Data.SqlClient;
 
 public partial class _Default : System.Web.UI.Page
 {
+
+    public static int V = 0;
+    public static int Att = 0;
+    public static int End = 0;
+    public static int Vit = 0;
+    public static int Str = 0;
+    public static int Dex = 0;
+    public static int Int = 0;
+    public static int Fai = 0;
+    public static int Luc = 0;
+    public static int Lev = 0;
+
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -307,9 +319,37 @@ public partial class _Default : System.Web.UI.Page
                 //----------------------------------------------------------------Character---------------------------------------------------------------------------------
 
                 SqlCommand LevelConnect = new SqlCommand("Select Soul_Level from Class where Class_Name = '" + Class.SelectedValue + "';", dbConnection);
-                Level.Text = LevelConnect.ExecuteScalar().ToString();
+                Lev= (int)LevelConnect.ExecuteScalar();
                 SqlCommand VigorConnect = new SqlCommand("Select Vigor from Class where Class_Name = '" + Class.SelectedValue + "';", dbConnection);
-                Vigor.Text = VigorConnect.ExecuteScalar().ToString();
+                V = (int)VigorConnect.ExecuteScalar();
+                SqlCommand AttunementConnect = new SqlCommand("Select Attunement from Class where Class_Name = '" + Class.SelectedValue + "';", dbConnection);
+                Att = (int)AttunementConnect.ExecuteScalar();
+                SqlCommand EnduranceConnect = new SqlCommand("Select Endurance from Class where Class_Name = '" + Class.SelectedValue + "';", dbConnection);
+                End = (int)EnduranceConnect.ExecuteScalar();
+                SqlCommand VitalityConnect = new SqlCommand("Select Vitality from Class where Class_Name = '" + Class.SelectedValue + "';", dbConnection);
+                Vit = (int)VitalityConnect.ExecuteScalar();
+                SqlCommand StrengthConnect = new SqlCommand("Select Strength from Class where Class_Name = '" + Class.SelectedValue + "';", dbConnection);
+                Str = (int)StrengthConnect.ExecuteScalar();
+                SqlCommand DexterityConnect = new SqlCommand("Select Dexterity from Class where Class_Name = '" + Class.SelectedValue + "';", dbConnection);
+                Dex = (int)DexterityConnect.ExecuteScalar();
+                SqlCommand IntelligenceConnect = new SqlCommand("Select Intelligence from Class where Class_Name = '" + Class.SelectedValue + "';", dbConnection);
+                Int = (int)IntelligenceConnect.ExecuteScalar();
+                SqlCommand FaithConnect = new SqlCommand("Select Faith from Class where Class_Name = '" + Class.SelectedValue + "';", dbConnection);
+                Fai = (int)FaithConnect.ExecuteScalar();
+                SqlCommand LuckConnect = new SqlCommand("Select Luck from Class where Class_Name = '" + Class.SelectedValue + "';", dbConnection);
+                Luc = (int)LuckConnect.ExecuteScalar();
+
+                Vigor.Text = V.ToString();
+                Attunement.Text = Att.ToString();
+                Endurance.Text = End.ToString();
+                Vitality.Text = Vit.ToString();
+                Strength.Text = Str.ToString();
+                Dexterity.Text = Dex.ToString();
+                Intelligence.Text = Int.ToString();
+                Faith.Text = Fai.ToString();
+                Luck.Text = Luc.ToString();
+                Level.Text = Lev.ToString();
+
             }
 
         }
@@ -319,4 +359,147 @@ public partial class _Default : System.Web.UI.Page
         }
         dbConnection.Close();
     }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        Lev++;
+        V++;
+        Level.Text = Lev.ToString();
+        Vigor.Text = V.ToString();
+    }
+
+    protected void Button3_Click(object sender, EventArgs e)
+    {
+        Lev--;
+        V--;
+        Level.Text = Lev.ToString();
+        Vigor.Text = V.ToString();
+    }
+    protected void Button4_Click(object sender, EventArgs e)
+    {
+        Lev++;
+        Att++;
+        Level.Text = Lev.ToString();
+        Attunement.Text = Att.ToString();
+    }
+
+    protected void Button5_Click(object sender, EventArgs e)
+    {
+        Lev--;
+        Att--;
+        Level.Text = Lev.ToString();
+        Attunement.Text = Att.ToString();
+    }
+
+    protected void Button6_Click(object sender, EventArgs e)
+    {
+        Lev++;
+        End++;
+        Level.Text = Lev.ToString();
+        Endurance.Text = End.ToString();
+    }
+
+    protected void Button7_Click(object sender, EventArgs e)
+    {
+        Lev--;
+        End--;
+        Level.Text = Lev.ToString();
+        Endurance.Text = End.ToString();
+    }
+
+    protected void Button8_Click(object sender, EventArgs e)
+    {
+        Lev++;
+        Vit++;
+        Level.Text = Lev.ToString();
+        Vitality.Text = Vit.ToString();
+    }
+
+    protected void Button9_Click(object sender, EventArgs e)
+    {
+        Lev--;
+        Vit--;
+        Level.Text = Lev.ToString();
+        Vitality.Text = Vit.ToString();
+    }
+
+    protected void Button10_Click(object sender, EventArgs e)
+    {
+        Lev++;
+        Str++;
+        Level.Text = Lev.ToString();
+        Strength.Text = Str.ToString();
+    }
+
+    protected void Button11_Click(object sender, EventArgs e)
+    {
+        Lev--;
+        Str--;
+        Level.Text = Lev.ToString();
+        Strength.Text = Str.ToString();
+    }
+
+    protected void Button12_Click(object sender, EventArgs e)
+    {
+        Lev++;
+        Dex++;
+        Level.Text = Lev.ToString();
+        Dexterity.Text = Dex.ToString();
+    }
+
+    protected void Button13_Click(object sender, EventArgs e)
+    {
+        Lev--;
+        Dex--;
+        Level.Text = Lev.ToString();
+        Dexterity.Text = Dex.ToString();
+    }
+
+    protected void Button14_Click(object sender, EventArgs e)
+    {
+        Lev++;
+        Int++;
+        Level.Text = Lev.ToString();
+        Intelligence.Text = Int.ToString();
+    }
+
+    protected void Button15_Click(object sender, EventArgs e)
+    {
+        Lev--;
+        Int--;
+        Level.Text = Lev.ToString();
+        Intelligence.Text = Int.ToString();
+    }
+
+    protected void Button16_Click(object sender, EventArgs e)
+    {
+        Lev++;
+        Fai++;
+        Level.Text = Lev.ToString();
+        Faith.Text = Fai.ToString();
+    }
+
+    protected void Button17_Click(object sender, EventArgs e)
+    {
+        Lev--;
+        Fai--;
+        Level.Text = Lev.ToString();
+        Faith.Text = Fai.ToString();
+    }
+    protected void Button18_Click(object sender, EventArgs e)
+    {
+        Lev++;
+        Luc++;
+        Level.Text = Lev.ToString();
+        Luck.Text = Luc.ToString();
+    }
+
+    protected void Button19_Click(object sender, EventArgs e)
+    {
+        Lev--;
+        Luc--;
+        Level.Text = Lev.ToString();
+        Luck.Text = Luc.ToString();
+    }
+
 }
