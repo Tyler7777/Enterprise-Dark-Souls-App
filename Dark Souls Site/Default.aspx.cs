@@ -315,6 +315,19 @@ public partial class _Default : System.Web.UI.Page
                 Notes.Text += Ring3.SelectedValue + ": " + RingE3.ExecuteScalar().ToString() + Environment.NewLine + Environment.NewLine;
                 SqlCommand RingE4 = new SqlCommand("Select Effects from Rings where Name = '" + Ring4.SelectedValue + "';", dbConnection);
                 Notes.Text += Ring4.SelectedValue + ": " + RingE4.ExecuteScalar().ToString() + Environment.NewLine + Environment.NewLine;
+                //Requirements
+                SqlCommand Requirements1 = new SqlCommand("Select Requirements from Weapons where Name = '" + LH1.SelectedValue + "';", dbConnection);
+                Notes.Text += LH1.SelectedValue + ": " + Requirements1.ExecuteScalar().ToString() + Environment.NewLine + Environment.NewLine;
+                SqlCommand Requirements2 = new SqlCommand("Select Requirements from Weapons where Name = '" + LH2.SelectedValue + "';", dbConnection);
+                Notes.Text += LH2.SelectedValue + ": " + Requirements2.ExecuteScalar().ToString() + Environment.NewLine + Environment.NewLine;
+                SqlCommand Requirements3 = new SqlCommand("Select Requirements from Weapons where Name = '" + LH3.SelectedValue + "';", dbConnection);
+                Notes.Text += LH3.SelectedValue + ": " + Requirements3.ExecuteScalar().ToString() + Environment.NewLine + Environment.NewLine;
+                SqlCommand Requirements4 = new SqlCommand("Select Requirements from Weapons where Name = '" + RH1.SelectedValue + "';", dbConnection);
+                Notes.Text += RH1.SelectedValue + ": " + Requirements4.ExecuteScalar().ToString() + Environment.NewLine + Environment.NewLine;
+                SqlCommand Requirements5 = new SqlCommand("Select Requirements from Weapons where Name = '" + RH2.SelectedValue + "';", dbConnection);
+                Notes.Text += RH2.SelectedValue + ": " + Requirements5.ExecuteScalar().ToString() + Environment.NewLine + Environment.NewLine;
+                SqlCommand Requirements6 = new SqlCommand("Select Requirements from Weapons where Name = '" + RH3.SelectedValue + "';", dbConnection);
+                Notes.Text += RH3.SelectedValue + ": " + Requirements6.ExecuteScalar().ToString() + Environment.NewLine + Environment.NewLine;
 
                 //----------------------------------------------------------------Character---------------------------------------------------------------------------------
 
