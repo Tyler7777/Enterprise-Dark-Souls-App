@@ -188,6 +188,16 @@
                 Poise: <asp:Literal ID="Poise" runat="server" Text="0"></asp:Literal>
                 <br /><br />
                 Carry Weight: <asp:Literal ID="CWeight" runat="server" Text="0"></asp:Literal>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <center>
+                    <asp:Button ID="SAVE" runat="server" Font-Size="X-Large" Height="52px" OnClick="SaveButton" Text="Save" Width="201px" />
+                </center>
             </td>
         </tr>
 

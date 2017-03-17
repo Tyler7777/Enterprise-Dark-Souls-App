@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -515,4 +516,74 @@ public partial class _Default : System.Web.UI.Page
         Luck.Text = Luc.ToString();
     }
 
+    protected void SaveButton(object sender, EventArgs e)
+    {
+        try
+        {
+
+            //Pass the filepath and filename to the StreamWriter Constructor
+            StreamWriter sw = new StreamWriter("U:\\Test.txt");
+
+            //Write a line of text
+            sw.WriteLine("Character Name: " + Name.Text);
+            sw.WriteLine("Gender: " + Gender.Text);
+            sw.WriteLine("Class: " + Class.SelectedValue);
+            sw.WriteLine("Covenant: " + Covenant.Text);
+            sw.WriteLine("");
+            sw.WriteLine("Level: " + Luck.Text);
+            sw.WriteLine("Vigor: " + Vigor.Text);
+            sw.WriteLine("Attunement: " + Attunement.Text);
+            sw.WriteLine("Endurance: "+ Endurance.Text);
+            sw.WriteLine("Vitality: "+ Vitality.Text);
+            sw.WriteLine("Strength: "+ Strength.Text);
+            sw.WriteLine("Dexterity: "+ Dexterity.Text);
+            sw.WriteLine("Intelligence: "+ Intelligence.Text);
+            sw.WriteLine("Faith: " + Faith.Text);
+            sw.WriteLine("Luck: " + Luck.Text);
+            sw.WriteLine("");
+            sw.WriteLine("Additional Notes/Requirements:"+Notes.Text);
+            sw.WriteLine("Head armor: "+ Head.SelectedValue);
+            sw.WriteLine("Chest armor: "+ Chest.SelectedValue);
+            sw.WriteLine("Hand armor: "+ Hands.SelectedValue);
+            sw.WriteLine("Leg armor: "+ Legs.SelectedValue);
+            sw.WriteLine("");
+            sw.WriteLine("Ring 1: "+Ring1.SelectedValue);
+            sw.WriteLine("Ring 2: " + Ring2.SelectedValue);
+            sw.WriteLine("Ring 3: " + Ring3.SelectedValue);
+            sw.WriteLine("Ring 4: " + Ring4.SelectedValue);
+            sw.WriteLine("");
+            sw.WriteLine("LH1: " + LH1.SelectedValue);
+            sw.WriteLine("LH2: " + LH2.SelectedValue);
+            sw.WriteLine("LH3: " + LH3.SelectedValue);
+            sw.WriteLine("RH1: " + RH1.SelectedValue);
+            sw.WriteLine("RH2: " + RH2.SelectedValue);
+            sw.WriteLine("RH3: " + RH3.SelectedValue);
+            sw.WriteLine("");
+            sw.WriteLine("Physical: " + PhysicalDef.Text);
+            sw.WriteLine("VS Strike: " + StrikeDef.Text);
+            sw.WriteLine("VS Slash: " + SlashDef.Text);
+            sw.WriteLine("VS Thrust: " + ThrustDef.Text);
+            sw.WriteLine("Magic: " + MagicDef.Text);
+            sw.WriteLine("Fire: " + FireDef.Text);
+            sw.WriteLine("Lightning: " + LightningDef.Text);
+            sw.WriteLine("Dark: " + DarkDef.Text);
+            sw.WriteLine("Bleed: " + BleedRes.Text);
+            sw.WriteLine("Poison: " + PoisonRes.Text);
+            sw.WriteLine("Frost: " + FrostRes.Text);
+            sw.WriteLine("Curse: " + CurseRes.Text);
+            
+
+
+            //Close the file
+            sw.Close();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Exception: " + ex.Message);
+        }
+        finally
+        {
+            Console.WriteLine("Executing finally block.");
+        }
+    }
 }
