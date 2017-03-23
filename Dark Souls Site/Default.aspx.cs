@@ -871,8 +871,17 @@ public partial class _Default : System.Web.UI.Page
             sw.WriteLine("Poison: " + PoisonRes.Text);
             sw.WriteLine("Frost: " + FrostRes.Text);
             sw.WriteLine("Curse: " + CurseRes.Text);
-            
-
+            sw.WriteLine("");
+            sw.WriteLine("Spell 1: " + spell1.SelectedValue.ToString());
+            sw.WriteLine("Spell 2: " + spell2.SelectedValue.ToString());
+            sw.WriteLine("Spell 3: " + spell3.SelectedValue.ToString());
+            sw.WriteLine("Spell 4: " + spell4.SelectedValue.ToString());
+            sw.WriteLine("Spell 5: " + spell5.SelectedValue.ToString());
+            sw.WriteLine("Spell 6: " + spell6.SelectedValue.ToString());
+            sw.WriteLine("Spell 7: " + spell7.SelectedValue.ToString());
+            sw.WriteLine("Spell 8: " + spell8.SelectedValue.ToString());
+            sw.WriteLine("Spell 9: " + spell9.SelectedValue.ToString());
+            sw.WriteLine("Spell 10: " + spell10.SelectedValue.ToString());
 
             //Close the file
             sw.Close();

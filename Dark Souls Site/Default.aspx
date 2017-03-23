@@ -15,9 +15,9 @@
     <table cellspacing="33%">
         <tr>
             <!-- Top Row containing essentially headers for the three columns, will break down the columns to sections-->
-            <th><asp:Literal ID= "topname1" runat="server" value="Character"></asp:Literal>'s Personal Details</th>
-            <th><asp:Literal ID= "topname2" runat="server" value="Character"></asp:Literal>'s Equipment</th>
-            <th><asp:Literal ID= "topname3" runat="server" value="Character"></asp:Literal>'s Stats</th>
+            <th><asp:Literal ID= "topname1" runat="server" Text="Character"></asp:Literal>'s Personal Details</th>
+            <th><asp:Literal ID= "topname2" runat="server" Text="Character"></asp:Literal>'s Equipment</th>
+            <th><asp:Literal ID= "topname3" runat="server" Text="Character"></asp:Literal>'s Stats</th>
             <!-- maybe replace "characters" with name from textbox?-->
         </tr>
         <tr>
@@ -153,8 +153,8 @@
                 <hr />
                 <table>
                     <tr>
-                        <td>
-                            <asp:DropDownList ID="spell1" runat="server">
+                        <td>        
+                               <asp:DropDownList ID="spell1" runat="server">
                                 <asp:ListItem>Great Heal (Req. Int 0, Faith 25)</asp:ListItem>
                                 <asp:ListItem>Lifehunt Scythe (Req. Int 0, Faith 22)</asp:ListItem>
                                 <asp:ListItem>Darkmoon Blade (Req. Int 0, Faith 30)</asp:ListItem>
@@ -168,6 +168,7 @@
                                 <asp:ListItem>Dead Again (Req. Int 15, Faith 23)</asp:ListItem>
                                 <asp:ListItem>Divine Pillars of Light (Req. Int 0, Faith 30)</asp:ListItem>
                             </asp:DropDownList>
+                        <br />
                             <asp:DropDownList ID="spell3" runat="server">
                                 <asp:ListItem>Great Heal (Req. Int 0, Faith 25)</asp:ListItem>
                                 <asp:ListItem>Lifehunt Scythe (Req. Int 0, Faith 22)</asp:ListItem>
@@ -182,6 +183,7 @@
                                 <asp:ListItem>Dead Again (Req. Int 15, Faith 23)</asp:ListItem>
                                 <asp:ListItem>Divine Pillars of Light (Req. Int 0, Faith 30)</asp:ListItem>
                             </asp:DropDownList>
+                            <br />
                             <asp:DropDownList ID="spell5" runat="server">
                                 <asp:ListItem>Great Heal (Req. Int 0, Faith 25)</asp:ListItem>
                                 <asp:ListItem>Lifehunt Scythe (Req. Int 0, Faith 22)</asp:ListItem>
@@ -196,6 +198,7 @@
                                 <asp:ListItem>Dead Again (Req. Int 15, Faith 23)</asp:ListItem>
                                 <asp:ListItem>Divine Pillars of Light (Req. Int 0, Faith 30)</asp:ListItem>
                             </asp:DropDownList>
+                            <br />
                             <asp:DropDownList ID="spell7" runat="server">
                                 <asp:ListItem>Great Heal (Req. Int 0, Faith 25)</asp:ListItem>
                                 <asp:ListItem>Lifehunt Scythe (Req. Int 0, Faith 22)</asp:ListItem>
@@ -210,6 +213,7 @@
                                 <asp:ListItem>Dead Again (Req. Int 15, Faith 23)</asp:ListItem>
                                 <asp:ListItem>Divine Pillars of Light (Req. Int 0, Faith 30)</asp:ListItem>
                             </asp:DropDownList>
+                            <br />
                             <asp:DropDownList ID="spell9" runat="server">
                                 <asp:ListItem>Great Heal (Req. Int 0, Faith 25)</asp:ListItem>
                                 <asp:ListItem>Lifehunt Scythe (Req. Int 0, Faith 22)</asp:ListItem>
@@ -224,7 +228,7 @@
                                 <asp:ListItem>Dead Again (Req. Int 15, Faith 23)</asp:ListItem>
                                 <asp:ListItem>Divine Pillars of Light (Req. Int 0, Faith 30)</asp:ListItem>
                             </asp:DropDownList>
-                        </td>
+                       </td>
                     </tr>
                 </table>
             </td>
