@@ -373,6 +373,9 @@ public partial class _Default : System.Web.UI.Page
                 Luck.Text = Luc.ToString();
                 Level.Text = Lev.ToString();
 
+                topname1.Text = Name.Text;
+                topname2.Text = Name.Text;
+                topname3.Text = Name.Text;
             }
 
         }
