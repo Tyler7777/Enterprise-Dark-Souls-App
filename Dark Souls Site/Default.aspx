@@ -149,6 +149,81 @@
                 <td>RH3:<br />
 &nbsp;<asp:DropDownList ID="RH3" runat="server" DataSourceID="SqlDataSource7" DataTextField="Name" DataValueField="Name"></asp:DropDownList><br /><br /></td>
                     </tr>
+                    <tr>
+                        <td>
+                            <br /><br /><hr /><br />
+                            <asp:DropDownList ID="spell1" runat="server">
+                                <asp:ListItem>Great Heal (Req. Int 0, Faith 25)</asp:ListItem>
+                                <asp:ListItem>Lifehunt Scythe (Req. Int 0, Faith 22)</asp:ListItem>
+                                <asp:ListItem>Darkmoon Blade (Req. Int 0, Faith 30)</asp:ListItem>
+                                <asp:ListItem>Dead Again (Req. Int 15, Faith 23)</asp:ListItem>
+                                <asp:ListItem>Divine Pillars of Light (Req. Int 0, Faith 30)</asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:DropDownList ID="spell2" runat="server">
+                                <asp:ListItem>Great Heal (Req. Int 0, Faith 25)</asp:ListItem>
+                                <asp:ListItem>Lifehunt Scythe (Req. Int 0, Faith 22)</asp:ListItem>
+                                <asp:ListItem>Darkmoon Blade (Req. Int 0, Faith 30)</asp:ListItem>
+                                <asp:ListItem>Dead Again (Req. Int 15, Faith 23)</asp:ListItem>
+                                <asp:ListItem>Divine Pillars of Light (Req. Int 0, Faith 30)</asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:DropDownList ID="spell3" runat="server">
+                                <asp:ListItem>Great Heal (Req. Int 0, Faith 25)</asp:ListItem>
+                                <asp:ListItem>Lifehunt Scythe (Req. Int 0, Faith 22)</asp:ListItem>
+                                <asp:ListItem>Darkmoon Blade (Req. Int 0, Faith 30)</asp:ListItem>
+                                <asp:ListItem>Dead Again (Req. Int 15, Faith 23)</asp:ListItem>
+                                <asp:ListItem>Divine Pillars of Light (Req. Int 0, Faith 30)</asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:DropDownList ID="spell4" runat="server">
+                                <asp:ListItem>Great Heal (Req. Int 0, Faith 25)</asp:ListItem>
+                                <asp:ListItem>Lifehunt Scythe (Req. Int 0, Faith 22)</asp:ListItem>
+                                <asp:ListItem>Darkmoon Blade (Req. Int 0, Faith 30)</asp:ListItem>
+                                <asp:ListItem>Dead Again (Req. Int 15, Faith 23)</asp:ListItem>
+                                <asp:ListItem>Divine Pillars of Light (Req. Int 0, Faith 30)</asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:DropDownList ID="spell5" runat="server">
+                                <asp:ListItem>Great Heal (Req. Int 0, Faith 25)</asp:ListItem>
+                                <asp:ListItem>Lifehunt Scythe (Req. Int 0, Faith 22)</asp:ListItem>
+                                <asp:ListItem>Darkmoon Blade (Req. Int 0, Faith 30)</asp:ListItem>
+                                <asp:ListItem>Dead Again (Req. Int 15, Faith 23)</asp:ListItem>
+                                <asp:ListItem>Divine Pillars of Light (Req. Int 0, Faith 30)</asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:DropDownList ID="spell6" runat="server">
+                                <asp:ListItem>Great Heal (Req. Int 0, Faith 25)</asp:ListItem>
+                                <asp:ListItem>Lifehunt Scythe (Req. Int 0, Faith 22)</asp:ListItem>
+                                <asp:ListItem>Darkmoon Blade (Req. Int 0, Faith 30)</asp:ListItem>
+                                <asp:ListItem>Dead Again (Req. Int 15, Faith 23)</asp:ListItem>
+                                <asp:ListItem>Divine Pillars of Light (Req. Int 0, Faith 30)</asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:DropDownList ID="spell7" runat="server">
+                                <asp:ListItem>Great Heal (Req. Int 0, Faith 25)</asp:ListItem>
+                                <asp:ListItem>Lifehunt Scythe (Req. Int 0, Faith 22)</asp:ListItem>
+                                <asp:ListItem>Darkmoon Blade (Req. Int 0, Faith 30)</asp:ListItem>
+                                <asp:ListItem>Dead Again (Req. Int 15, Faith 23)</asp:ListItem>
+                                <asp:ListItem>Divine Pillars of Light (Req. Int 0, Faith 30)</asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:DropDownList ID="spell8" runat="server">
+                                <asp:ListItem>Great Heal (Req. Int 0, Faith 25)</asp:ListItem>
+                                <asp:ListItem>Lifehunt Scythe (Req. Int 0, Faith 22)</asp:ListItem>
+                                <asp:ListItem>Darkmoon Blade (Req. Int 0, Faith 30)</asp:ListItem>
+                                <asp:ListItem>Dead Again (Req. Int 15, Faith 23)</asp:ListItem>
+                                <asp:ListItem>Divine Pillars of Light (Req. Int 0, Faith 30)</asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:DropDownList ID="spell9" runat="server">
+                                <asp:ListItem>Great Heal (Req. Int 0, Faith 25)</asp:ListItem>
+                                <asp:ListItem>Lifehunt Scythe (Req. Int 0, Faith 22)</asp:ListItem>
+                                <asp:ListItem>Darkmoon Blade (Req. Int 0, Faith 30)</asp:ListItem>
+                                <asp:ListItem>Dead Again (Req. Int 15, Faith 23)</asp:ListItem>
+                                <asp:ListItem>Divine Pillars of Light (Req. Int 0, Faith 30)</asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:DropDownList ID="spell10" runat="server">
+                                <asp:ListItem>Great Heal (Req. Int 0, Faith 25)</asp:ListItem>
+                                <asp:ListItem>Lifehunt Scythe (Req. Int 0, Faith 22)</asp:ListItem>
+                                <asp:ListItem>Darkmoon Blade (Req. Int 0, Faith 30)</asp:ListItem>
+                                <asp:ListItem>Dead Again (Req. Int 15, Faith 23)</asp:ListItem>
+                                <asp:ListItem>Divine Pillars of Light (Req. Int 0, Faith 30)</asp:ListItem>
+                            </asp:DropDownList>
+                        </td>
+                    </tr>
                 </table>
             </td>
 

@@ -23,7 +23,16 @@ public partial class _Default : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        spell1.Enabled = false;
+        spell2.Enabled = false;
+        spell3.Enabled = false;
+        spell4.Enabled = false;
+        spell5.Enabled = false;
+        spell6.Enabled = false;
+        spell7.Enabled = false;
+        spell8.Enabled = false;
+        spell9.Enabled = false;
+        spell10.Enabled = false;
     }
        
     protected void Button1_Click(object sender, EventArgs e)
@@ -395,6 +404,150 @@ public partial class _Default : System.Web.UI.Page
         Att++;
         Level.Text = Lev.ToString();
         Attunement.Text = Att.ToString();
+
+        if(Att>=55)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = true;
+            spell4.Enabled = true;
+            spell5.Enabled = true;
+            spell6.Enabled = true;
+            spell7.Enabled = true;
+            spell8.Enabled = true;
+            spell9.Enabled = true;
+            spell10.Enabled = true;
+        }
+        else if(Att >=50)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = true;
+            spell4.Enabled = true;
+            spell5.Enabled = true;
+            spell6.Enabled = true;
+            spell7.Enabled = true;
+            spell8.Enabled = true;
+            spell9.Enabled = true;
+            spell10.Enabled = false;
+        }
+        else if (Att >= 45)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = true;
+            spell4.Enabled = true;
+            spell5.Enabled = true;
+            spell6.Enabled = true;
+            spell7.Enabled = true;
+            spell8.Enabled = true;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
+        else if (Att >= 40)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = true;
+            spell4.Enabled = true;
+            spell5.Enabled = true;
+            spell6.Enabled = true;
+            spell7.Enabled = true;
+            spell8.Enabled = false;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
+        else if (Att >= 35)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = true;
+            spell4.Enabled = true;
+            spell5.Enabled = true;
+            spell6.Enabled = true;
+            spell7.Enabled = false;
+            spell8.Enabled = false;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
+        else if (Att >= 30)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = true;
+            spell4.Enabled = true;
+            spell5.Enabled = true;
+            spell6.Enabled = false;
+            spell7.Enabled = false;
+            spell8.Enabled = false;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
+        else if (Att >= 25)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = true;
+            spell4.Enabled = true;
+            spell5.Enabled = false;
+            spell6.Enabled = false;
+            spell7.Enabled = false;
+            spell8.Enabled = false;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
+        else if (Att >= 20)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = true;
+            spell4.Enabled = false;
+            spell5.Enabled = false;
+            spell6.Enabled = false;
+            spell7.Enabled = false;
+            spell8.Enabled = false;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
+        else if (Att >= 15)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = false;
+            spell4.Enabled = false;
+            spell5.Enabled = false;
+            spell6.Enabled = false;
+            spell7.Enabled = false;
+            spell8.Enabled = false;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
+        else if (Att >= 10)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = false;
+            spell3.Enabled = false;
+            spell4.Enabled = false;
+            spell5.Enabled = false;
+            spell6.Enabled = false;
+            spell7.Enabled = false;
+            spell8.Enabled = false;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
+        else 
+        {
+            spell1.Enabled = false;
+            spell2.Enabled = false;
+            spell3.Enabled = false;
+            spell4.Enabled = false;
+            spell5.Enabled = false;
+            spell6.Enabled = false;
+            spell7.Enabled = false;
+            spell8.Enabled = false;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
     }
 
     protected void Button5_Click(object sender, EventArgs e)
@@ -403,6 +556,150 @@ public partial class _Default : System.Web.UI.Page
         Att--;
         Level.Text = Lev.ToString();
         Attunement.Text = Att.ToString();
+
+        if (Att >= 55)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = true;
+            spell4.Enabled = true;
+            spell5.Enabled = true;
+            spell6.Enabled = true;
+            spell7.Enabled = true;
+            spell8.Enabled = true;
+            spell9.Enabled = true;
+            spell10.Enabled = true;
+        }
+        else if (Att >= 50)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = true;
+            spell4.Enabled = true;
+            spell5.Enabled = true;
+            spell6.Enabled = true;
+            spell7.Enabled = true;
+            spell8.Enabled = true;
+            spell9.Enabled = true;
+            spell10.Enabled = false;
+        }
+        else if (Att >= 45)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = true;
+            spell4.Enabled = true;
+            spell5.Enabled = true;
+            spell6.Enabled = true;
+            spell7.Enabled = true;
+            spell8.Enabled = true;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
+        else if (Att >= 40)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = true;
+            spell4.Enabled = true;
+            spell5.Enabled = true;
+            spell6.Enabled = true;
+            spell7.Enabled = true;
+            spell8.Enabled = false;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
+        else if (Att >= 35)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = true;
+            spell4.Enabled = true;
+            spell5.Enabled = true;
+            spell6.Enabled = true;
+            spell7.Enabled = false;
+            spell8.Enabled = false;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
+        else if (Att >= 30)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = true;
+            spell4.Enabled = true;
+            spell5.Enabled = true;
+            spell6.Enabled = false;
+            spell7.Enabled = false;
+            spell8.Enabled = false;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
+        else if (Att >= 25)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = true;
+            spell4.Enabled = true;
+            spell5.Enabled = false;
+            spell6.Enabled = false;
+            spell7.Enabled = false;
+            spell8.Enabled = false;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
+        else if (Att >= 20)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = true;
+            spell4.Enabled = false;
+            spell5.Enabled = false;
+            spell6.Enabled = false;
+            spell7.Enabled = false;
+            spell8.Enabled = false;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
+        else if (Att >= 15)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = true;
+            spell3.Enabled = false;
+            spell4.Enabled = false;
+            spell5.Enabled = false;
+            spell6.Enabled = false;
+            spell7.Enabled = false;
+            spell8.Enabled = false;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
+        else if (Att >= 10)
+        {
+            spell1.Enabled = true;
+            spell2.Enabled = false;
+            spell3.Enabled = false;
+            spell4.Enabled = false;
+            spell5.Enabled = false;
+            spell6.Enabled = false;
+            spell7.Enabled = false;
+            spell8.Enabled = false;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
+        else
+        {
+            spell1.Enabled = false;
+            spell2.Enabled = false;
+            spell3.Enabled = false;
+            spell4.Enabled = false;
+            spell5.Enabled = false;
+            spell6.Enabled = false;
+            spell7.Enabled = false;
+            spell8.Enabled = false;
+            spell9.Enabled = false;
+            spell10.Enabled = false;
+        }
     }
 
     protected void Button6_Click(object sender, EventArgs e)
