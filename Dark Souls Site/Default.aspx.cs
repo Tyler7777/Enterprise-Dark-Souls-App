@@ -822,7 +822,7 @@ public partial class _Default : System.Web.UI.Page
         {
 
             //Pass the filepath and filename to the StreamWriter Constructor
-            StreamWriter sw = new StreamWriter("U:\\Test.txt");
+            StreamWriter sw = new StreamWriter("U:\\Dark_Souls.txt");
 
             //Write a line of text
             sw.WriteLine("Character Name: " + Name.Text);
